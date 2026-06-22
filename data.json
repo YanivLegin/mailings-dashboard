@@ -1,0 +1,2500 @@
+{
+  "overall_stats": {
+    "total_mailings": 108,
+    "total_sent": 82282,
+    "avg_open_rate": 217.43,
+    "avg_click_rate": 15.0,
+    "total_bounces": 720,
+    "bounce_rate": 0.88
+  },
+  "categories": {
+    "הדרכות ואירועים": {
+      "avg_open": 408.1,
+      "avg_click": 30.69,
+      "count": 29,
+      "best_hour": 15,
+      "best_day": "שני"
+    },
+    "פעילות תחזוקה והשבתות": {
+      "avg_open": 150.21,
+      "avg_click": 3.1,
+      "count": 39,
+      "best_hour": 15,
+      "best_day": "חמישי"
+    },
+    "עדכונים מקצועיים": {
+      "avg_open": 73.56,
+      "avg_click": 13.11,
+      "count": 9,
+      "best_hour": 16,
+      "best_day": "ראשון"
+    },
+    "עדכונים על מוצרים": {
+      "avg_open": 120.38,
+      "avg_click": 8.52,
+      "count": 21,
+      "best_hour": 10,
+      "best_day": "שישי"
+    },
+    "שיווק": {
+      "avg_open": 272.33,
+      "avg_click": 34.67,
+      "count": 9,
+      "best_hour": 9,
+      "best_day": "שלישי"
+    },
+    "אבטחת מידע וסייבר": {
+      "avg_open": 148.0,
+      "avg_click": 0.0,
+      "count": 1,
+      "best_hour": 9,
+      "best_day": "חמישי"
+    }
+  },
+  "days_of_week": {
+    "ראשון": {
+      "avg_open": 282.04,
+      "avg_click": 11.88,
+      "count": 26
+    },
+    "שני": {
+      "avg_open": 214.88,
+      "avg_click": 6.21,
+      "count": 24
+    },
+    "שלישי": {
+      "avg_open": 319.14,
+      "avg_click": 43.43,
+      "count": 14
+    },
+    "רביעי": {
+      "avg_open": 141.15,
+      "avg_click": 28.38,
+      "count": 13
+    },
+    "חמישי": {
+      "avg_open": 151.2,
+      "avg_click": 5.7,
+      "count": 30
+    },
+    "שישי": {
+      "avg_open": 153.0,
+      "avg_click": 14.0,
+      "count": 1
+    },
+    "שבת": {
+      "avg_open": 0,
+      "avg_click": 0,
+      "count": 0
+    }
+  },
+  "hour_bins": {
+    "אחר הצהריים (14:00-18:00)": {
+      "avg_open": 169.76,
+      "avg_click": 9.27,
+      "count": 41
+    },
+    "צהריים (11:00-14:00)": {
+      "avg_open": 289.57,
+      "avg_click": 19.07,
+      "count": 28
+    },
+    "בוקר (07:00-11:00)": {
+      "avg_open": 215.74,
+      "avg_click": 18.1,
+      "count": 39
+    }
+  },
+  "recipient_groups_influence": {
+    "העלאת קבצים": {
+      "avg_open_with": 626.22,
+      "avg_click_with": 67.0,
+      "avg_open_without": 180.26,
+      "avg_click_without": 10.27,
+      "count": 9
+    },
+    "מוצר הדיוור NOTIFY G2": {
+      "avg_open_with": 589.5,
+      "avg_click_with": 59.7,
+      "avg_open_without": 179.46,
+      "avg_click_without": 10.44,
+      "count": 10
+    },
+    "מנהלי לקוחות": {
+      "avg_open_with": 202.61,
+      "avg_click_with": 15.22,
+      "avg_open_without": 335.92,
+      "avg_click_without": 13.25,
+      "count": 96
+    },
+    "מנהלי פרויקטי IT": {
+      "avg_open_with": 226.14,
+      "avg_click_with": 15.38,
+      "avg_open_without": 208.04,
+      "avg_click_without": 14.6,
+      "count": 56
+    },
+    "עבודות פעילות תחזוקה": {
+      "avg_open_with": 157.08,
+      "avg_click_with": 3.0,
+      "avg_open_without": 236.56,
+      "avg_click_without": 18.8,
+      "count": 26
+    },
+    "צוות בקרה": {
+      "avg_open_with": 172.85,
+      "avg_click_with": 9.63,
+      "avg_open_without": 250.5,
+      "avg_click_without": 18.98,
+      "count": 46
+    },
+    "רפרנט המשרד מול מערך הדיגיטל": {
+      "avg_open_with": 221.01,
+      "avg_click_with": 17.14,
+      "avg_open_without": 211.08,
+      "avg_click_without": 11.21,
+      "count": 69
+    },
+    "רפרנטים מצומצם": {
+      "avg_open_with": 221.92,
+      "avg_click_with": 15.47,
+      "avg_open_without": 213.69,
+      "avg_click_without": 14.61,
+      "count": 49
+    },
+    "CDO": {
+      "avg_open_with": 572.25,
+      "avg_click_with": 64.62,
+      "avg_open_without": 189.04,
+      "avg_click_without": 11.03,
+      "count": 8
+    },
+    "CDO חדש": {
+      "avg_open_with": 572.25,
+      "avg_click_with": 64.62,
+      "avg_open_without": 189.04,
+      "avg_click_without": 11.03,
+      "count": 8
+    },
+    "CTO": {
+      "avg_open_with": 399.94,
+      "avg_click_with": 45.69,
+      "avg_open_without": 185.68,
+      "avg_click_without": 9.66,
+      "count": 16
+    },
+    "מנמ\"רים מורחב": {
+      "avg_open_with": 281.39,
+      "avg_click_with": 32.13,
+      "avg_open_without": 191.68,
+      "avg_click_without": 8.1,
+      "count": 31
+    },
+    "מנמ\"רים מצומצם": {
+      "avg_open_with": 238.1,
+      "avg_click_with": 24.84,
+      "avg_open_without": 209.1,
+      "avg_click_without": 11.04,
+      "count": 31
+    },
+    "סמנכלי אסטרטגיה": {
+      "avg_open_with": 435.0,
+      "avg_click_with": 42.09,
+      "avg_open_without": 192.75,
+      "avg_click_without": 11.93,
+      "count": 11
+    },
+    "דניאל בניש": {
+      "avg_open_with": 112.5,
+      "avg_click_with": 13.0,
+      "avg_open_without": 223.6,
+      "avg_click_without": 15.12,
+      "count": 6
+    },
+    "נילי שטיין": {
+      "avg_open_with": 110.2,
+      "avg_click_with": 22.4,
+      "avg_open_without": 222.63,
+      "avg_click_without": 14.64,
+      "count": 5
+    },
+    "טל חכים": {
+      "avg_open_with": 103.0,
+      "avg_click_with": 18.29,
+      "avg_open_without": 225.36,
+      "avg_click_without": 14.77,
+      "count": 7
+    },
+    "אזור אישי": {
+      "avg_open_with": 406.33,
+      "avg_click_with": 34.56,
+      "avg_open_without": 179.64,
+      "avg_click_without": 11.09,
+      "count": 18
+    },
+    "זימון תורים GOVISIT": {
+      "avg_open_with": 397.37,
+      "avg_click_with": 33.58,
+      "avg_open_without": 179.01,
+      "avg_click_without": 11.03,
+      "count": 19
+    },
+    "מערכת ההזדהות הלאומית": {
+      "avg_open_with": 413.82,
+      "avg_click_with": 37.0,
+      "avg_open_without": 180.74,
+      "avg_click_without": 10.89,
+      "count": 17
+    },
+    "שדרת המידע": {
+      "avg_open_with": 420.12,
+      "avg_click_with": 37.0,
+      "avg_open_without": 179.56,
+      "avg_click_without": 10.89,
+      "count": 17
+    },
+    "אירוח אתרים": {
+      "avg_open_with": 435.25,
+      "avg_click_with": 38.69,
+      "avg_open_without": 179.54,
+      "avg_click_without": 10.88,
+      "count": 16
+    },
+    "gov.il גוב": {
+      "avg_open_with": 615.8,
+      "avg_click_with": 60.2,
+      "avg_open_without": 176.78,
+      "avg_click_without": 10.39,
+      "count": 10
+    },
+    "מסלול": {
+      "avg_open_with": 536.0,
+      "avg_click_with": 42.56,
+      "avg_open_without": 188.46,
+      "avg_click_without": 12.49,
+      "count": 9
+    },
+    "מיניסייט GOVEXTRA": {
+      "avg_open_with": 613.8,
+      "avg_click_with": 64.1,
+      "avg_open_without": 176.98,
+      "avg_click_without": 9.99,
+      "count": 10
+    },
+    "שרון אקרמן": {
+      "avg_open_with": 137.6,
+      "avg_click_with": 17.4,
+      "avg_open_without": 221.3,
+      "avg_click_without": 14.88,
+      "count": 5
+    },
+    "B2G": {
+      "avg_open_with": 855.17,
+      "avg_click_with": 97.67,
+      "avg_open_without": 179.91,
+      "avg_click_without": 10.14,
+      "count": 6
+    },
+    "GOVIDP": {
+      "avg_open_with": 1018.8,
+      "avg_click_with": 123.0,
+      "avg_open_without": 178.52,
+      "avg_click_without": 9.76,
+      "count": 5
+    },
+    "אבטחת מידע": {
+      "avg_open_with": 865.17,
+      "avg_click_with": 97.17,
+      "avg_open_without": 179.32,
+      "avg_click_without": 10.17,
+      "count": 6
+    },
+    "העלאת קבצים בענן GFU2": {
+      "avg_open_with": 822.8,
+      "avg_click_with": 73.6,
+      "avg_open_without": 188.04,
+      "avg_click_without": 12.16,
+      "count": 5
+    },
+    "הפניית דואר": {
+      "avg_open_with": 1004.4,
+      "avg_click_with": 115.6,
+      "avg_open_without": 179.22,
+      "avg_click_without": 10.12,
+      "count": 5
+    },
+    "הפצה GCP": {
+      "avg_open_with": 716.14,
+      "avg_click_with": 84.43,
+      "avg_open_without": 182.86,
+      "avg_click_without": 10.19,
+      "count": 7
+    },
+    "וובינרים והודעות תפוצה": {
+      "avg_open_with": 566.88,
+      "avg_click_with": 52.75,
+      "avg_open_without": 189.47,
+      "avg_click_without": 11.98,
+      "count": 8
+    },
+    "יחידת השותפויות": {
+      "avg_open_with": 819.4,
+      "avg_click_with": 78.6,
+      "avg_open_without": 188.2,
+      "avg_click_without": 11.91,
+      "count": 5
+    },
+    "כספות": {
+      "avg_open_with": 691.12,
+      "avg_click_with": 74.62,
+      "avg_open_without": 179.53,
+      "avg_click_without": 10.23,
+      "count": 8
+    },
+    "מוצר FG": {
+      "avg_open_with": 909.33,
+      "avg_click_with": 96.33,
+      "avg_open_without": 176.73,
+      "avg_click_without": 10.22,
+      "count": 6
+    },
+    "מנהלי אבטחת מידע CISO": {
+      "avg_open_with": 758.29,
+      "avg_click_with": 91.71,
+      "avg_open_without": 179.94,
+      "avg_click_without": 9.68,
+      "count": 7
+    },
+    "מנהלי יישומים": {
+      "avg_open_with": 874.17,
+      "avg_click_with": 106.67,
+      "avg_open_without": 178.79,
+      "avg_click_without": 9.61,
+      "count": 6
+    },
+    "מנוע תהליכים": {
+      "avg_open_with": 490.36,
+      "avg_click_with": 45.07,
+      "avg_open_without": 176.78,
+      "avg_click_without": 10.52,
+      "count": 14
+    },
+    "מערכת מנכ\"ל": {
+      "avg_open_with": 831.2,
+      "avg_click_with": 78.8,
+      "avg_open_without": 187.63,
+      "avg_click_without": 11.9,
+      "count": 5
+    },
+    "נאמני מערכת מנכ\"ל": {
+      "avg_open_with": 772.57,
+      "avg_click_with": 89.29,
+      "avg_open_without": 178.95,
+      "avg_click_without": 9.85,
+      "count": 7
+    },
+    "סמנכלי שירות בממשלה": {
+      "avg_open_with": 430.09,
+      "avg_click_with": 44.09,
+      "avg_open_without": 193.31,
+      "avg_click_without": 11.7,
+      "count": 11
+    },
+    "סקרים": {
+      "avg_open_with": 661.57,
+      "avg_click_with": 54.29,
+      "avg_open_without": 186.64,
+      "avg_click_without": 12.28,
+      "count": 7
+    },
+    "עבודות תחזוקה": {
+      "avg_open_with": 710.83,
+      "avg_click_with": 67.83,
+      "avg_open_without": 188.4,
+      "avg_click_without": 11.89,
+      "count": 6
+    },
+    "": {
+      "avg_open_with": 1172.86,
+      "avg_click_with": 95.43,
+      "avg_open_without": 151.21,
+      "avg_click_without": 9.43,
+      "count": 7
+    },
+    "צומת השירותים": {
+      "avg_open_with": 756.14,
+      "avg_click_with": 86.14,
+      "avg_open_without": 180.09,
+      "avg_click_without": 10.07,
+      "count": 7
+    },
+    "קיצור כתובות ממשלתי Go Gov": {
+      "avg_open_with": 710.83,
+      "avg_click_with": 61.33,
+      "avg_open_without": 188.4,
+      "avg_click_without": 12.27,
+      "count": 6
+    },
+    "ריקאפצ'ה Recaptcha": {
+      "avg_open_with": 1006.2,
+      "avg_click_with": 115.8,
+      "avg_open_without": 179.14,
+      "avg_click_without": 10.11,
+      "count": 5
+    },
+    "רשימת אחראי כרטיס חכם": {
+      "avg_open_with": 716.83,
+      "avg_click_with": 70.83,
+      "avg_open_without": 188.05,
+      "avg_click_without": 11.72,
+      "count": 6
+    },
+    "שירות הטפסים": {
+      "avg_open_with": 828.0,
+      "avg_click_with": 83.57,
+      "avg_open_without": 175.11,
+      "avg_click_without": 10.25,
+      "count": 7
+    },
+    "שירות התשלומים": {
+      "avg_open_with": 1042.8,
+      "avg_click_with": 117.0,
+      "avg_open_without": 177.36,
+      "avg_click_without": 10.05,
+      "count": 5
+    },
+    "תפקידי ליבה": {
+      "avg_open_with": 597.86,
+      "avg_click_with": 52.71,
+      "avg_open_without": 191.06,
+      "avg_click_without": 12.39,
+      "count": 7
+    },
+    "מסלול +": {
+      "avg_open_with": 126.4,
+      "avg_click_with": 3.4,
+      "avg_open_without": 221.84,
+      "avg_click_without": 15.56,
+      "count": 5
+    }
+  },
+  "model_coefficients": {
+    "intercept_opens": 217.42592592592592,
+    "intercept_clicks": 15.0,
+    "category_effects": {
+      "הדרכות ואירועים": {
+        "opens": 190.67752234993617,
+        "clicks": 15.689655172413794,
+        "count": 29
+      },
+      "פעילות תחזוקה והשבתות": {
+        "opens": -67.22079772079772,
+        "clicks": -11.897435897435898,
+        "count": 39
+      },
+      "עדכונים מקצועיים": {
+        "opens": -143.87037037037038,
+        "clicks": -1.8888888888888893,
+        "count": 9
+      },
+      "עדכונים על מוצרים": {
+        "opens": -97.04497354497354,
+        "clicks": -6.476190476190476,
+        "count": 21
+      },
+      "שיווק": {
+        "opens": 54.90740740740739,
+        "clicks": 19.666666666666664,
+        "count": 9
+      },
+      "אבטחת מידע וסייבר": {
+        "opens": -69.42592592592592,
+        "clicks": -15.0,
+        "count": 1
+      }
+    },
+    "day_effects": {
+      "0": {
+        "opens": 64.61253561253562,
+        "clicks": -3.115384615384615,
+        "count": 26
+      },
+      "1": {
+        "opens": -2.550925925925924,
+        "clicks": -8.791666666666668,
+        "count": 24
+      },
+      "2": {
+        "opens": 101.71693121693124,
+        "clicks": 28.42857142857143,
+        "count": 14
+      },
+      "3": {
+        "opens": -76.27207977207976,
+        "clicks": 13.384615384615383,
+        "count": 13
+      },
+      "4": {
+        "opens": -66.22592592592594,
+        "clicks": -9.3,
+        "count": 30
+      },
+      "5": {
+        "opens": -64.42592592592592,
+        "clicks": -1.0,
+        "count": 1
+      },
+      "6": {
+        "opens": 0.0,
+        "clicks": 0.0,
+        "count": 0
+      }
+    },
+    "hour_bin_effects": {
+      "אחר הצהריים (14:00-18:00)": {
+        "opens": -47.66982836495032,
+        "clicks": -5.731707317073171,
+        "count": 41
+      },
+      "צהריים (11:00-14:00)": {
+        "opens": 72.14550264550263,
+        "clicks": 4.071428571428573,
+        "count": 28
+      },
+      "בוקר (07:00-11:00)": {
+        "opens": -1.6823361823361722,
+        "clicks": 3.102564102564102,
+        "count": 39
+      }
+    },
+    "holiday_effects": {
+      "true": {
+        "opens": 313.5740740740741,
+        "clicks": -0.1538461538461533,
+        "count": 13
+      },
+      "false": {
+        "opens": -42.910136452241716,
+        "clicks": 0.021052631578946546,
+        "count": 95
+      }
+    },
+    "group_effects": {
+      "העלאת קבצים": {
+        "opens": 408.79629629629625,
+        "clicks": 52.0,
+        "count": 9
+      },
+      "מוצר הדיוור NOTIFY G2": {
+        "opens": 372.0740740740741,
+        "clicks": 44.7,
+        "count": 10
+      },
+      "מנהלי לקוחות": {
+        "opens": -14.811342592592581,
+        "clicks": 0.21875,
+        "count": 96
+      },
+      "מנהלי פרויקטי IT": {
+        "opens": 8.716931216931215,
+        "clicks": 0.375,
+        "count": 56
+      },
+      "עבודות פעילות תחזוקה": {
+        "opens": -60.34900284900286,
+        "clicks": -12.0,
+        "count": 26
+      },
+      "צוות בקרה": {
+        "opens": -44.57809983896939,
+        "clicks": -5.369565217391305,
+        "count": 46
+      },
+      "רפרנט המשרד מול מערך הדיגיטל": {
+        "opens": 3.5885668276972638,
+        "clicks": 2.144927536231883,
+        "count": 69
+      },
+      "רפרנטים מצומצם": {
+        "opens": 4.492441421012842,
+        "clicks": 0.46938775510204067,
+        "count": 49
+      },
+      "CDO": {
+        "opens": 354.8240740740741,
+        "clicks": 49.625,
+        "count": 8
+      },
+      "CDO חדש": {
+        "opens": 354.8240740740741,
+        "clicks": 49.625,
+        "count": 8
+      },
+      "CTO": {
+        "opens": 182.51157407407408,
+        "clicks": 30.6875,
+        "count": 16
+      },
+      "מנמ\"רים מורחב": {
+        "opens": 63.961170848267614,
+        "clicks": 17.12903225806452,
+        "count": 31
+      },
+      "מנמ\"רים מצומצם": {
+        "opens": 20.67084826762246,
+        "clicks": 9.838709677419356,
+        "count": 31
+      },
+      "סמנכלי אסטרטגיה": {
+        "opens": 217.57407407407408,
+        "clicks": 27.090909090909093,
+        "count": 11
+      },
+      "דניאל בניש": {
+        "opens": -104.92592592592592,
+        "clicks": -2.0,
+        "count": 6
+      },
+      "נילי שטיין": {
+        "opens": -107.22592592592592,
+        "clicks": 7.399999999999999,
+        "count": 5
+      },
+      "טל חכים": {
+        "opens": -114.42592592592592,
+        "clicks": 3.2857142857142847,
+        "count": 7
+      },
+      "אזור אישי": {
+        "opens": 188.9074074074074,
+        "clicks": 19.555555555555557,
+        "count": 18
+      },
+      "זימון תורים GOVISIT": {
+        "opens": 179.94249512670564,
+        "clicks": 18.578947368421055,
+        "count": 19
+      },
+      "מערכת ההזדהות הלאומית": {
+        "opens": 196.39760348583877,
+        "clicks": 22.0,
+        "count": 17
+      },
+      "שדרת המידע": {
+        "opens": 202.6917211328976,
+        "clicks": 22.0,
+        "count": 17
+      },
+      "אירוח אתרים": {
+        "opens": 217.82407407407408,
+        "clicks": 23.6875,
+        "count": 16
+      },
+      "gov.il גוב": {
+        "opens": 398.37407407407403,
+        "clicks": 45.2,
+        "count": 10
+      },
+      "מסלול": {
+        "opens": 318.5740740740741,
+        "clicks": 27.555555555555557,
+        "count": 9
+      },
+      "מיניסייט GOVEXTRA": {
+        "opens": 396.37407407407403,
+        "clicks": 49.099999999999994,
+        "count": 10
+      },
+      "שרון אקרמן": {
+        "opens": -79.82592592592593,
+        "clicks": 2.3999999999999986,
+        "count": 5
+      },
+      "B2G": {
+        "opens": 637.7407407407406,
+        "clicks": 82.66666666666667,
+        "count": 6
+      },
+      "GOVIDP": {
+        "opens": 801.3740740740741,
+        "clicks": 108.0,
+        "count": 5
+      },
+      "אבטחת מידע": {
+        "opens": 647.7407407407406,
+        "clicks": 82.16666666666667,
+        "count": 6
+      },
+      "העלאת קבצים בענן GFU2": {
+        "opens": 605.3740740740741,
+        "clicks": 58.599999999999994,
+        "count": 5
+      },
+      "הפניית דואר": {
+        "opens": 786.974074074074,
+        "clicks": 100.6,
+        "count": 5
+      },
+      "הפצה GCP": {
+        "opens": 498.7169312169312,
+        "clicks": 69.42857142857143,
+        "count": 7
+      },
+      "וובינרים והודעות תפוצה": {
+        "opens": 349.4490740740741,
+        "clicks": 37.75,
+        "count": 8
+      },
+      "יחידת השותפויות": {
+        "opens": 601.974074074074,
+        "clicks": 63.599999999999994,
+        "count": 5
+      },
+      "כספות": {
+        "opens": 473.6990740740741,
+        "clicks": 59.625,
+        "count": 8
+      },
+      "מוצר FG": {
+        "opens": 691.9074074074074,
+        "clicks": 81.33333333333333,
+        "count": 6
+      },
+      "מנהלי אבטחת מידע CISO": {
+        "opens": 540.8597883597884,
+        "clicks": 76.71428571428571,
+        "count": 7
+      },
+      "מנהלי יישומים": {
+        "opens": 656.7407407407406,
+        "clicks": 91.66666666666667,
+        "count": 6
+      },
+      "מנוע תהליכים": {
+        "opens": 272.9312169312169,
+        "clicks": 30.07142857142857,
+        "count": 14
+      },
+      "מערכת מנכ\"ל": {
+        "opens": 613.7740740740742,
+        "clicks": 63.8,
+        "count": 5
+      },
+      "נאמני מערכת מנכ\"ל": {
+        "opens": 555.1455026455026,
+        "clicks": 74.28571428571429,
+        "count": 7
+      },
+      "סמנכלי שירות בממשלה": {
+        "opens": 212.66498316498314,
+        "clicks": 29.090909090909093,
+        "count": 11
+      },
+      "סקרים": {
+        "opens": 444.14550264550263,
+        "clicks": 39.285714285714285,
+        "count": 7
+      },
+      "עבודות תחזוקה": {
+        "opens": 493.40740740740745,
+        "clicks": 52.83333333333333,
+        "count": 6
+      },
+      "": {
+        "opens": 955.431216931217,
+        "clicks": 80.42857142857143,
+        "count": 7
+      },
+      "צומת השירותים": {
+        "opens": 538.7169312169312,
+        "clicks": 71.14285714285714,
+        "count": 7
+      },
+      "קיצור כתובות ממשלתי Go Gov": {
+        "opens": 493.40740740740745,
+        "clicks": 46.333333333333336,
+        "count": 6
+      },
+      "ריקאפצ'ה Recaptcha": {
+        "opens": 788.7740740740742,
+        "clicks": 100.8,
+        "count": 5
+      },
+      "רשימת אחראי כרטיס חכם": {
+        "opens": 499.40740740740745,
+        "clicks": 55.83333333333333,
+        "count": 6
+      },
+      "שירות הטפסים": {
+        "opens": 610.5740740740741,
+        "clicks": 68.57142857142857,
+        "count": 7
+      },
+      "שירות התשלומים": {
+        "opens": 825.3740740740741,
+        "clicks": 102.0,
+        "count": 5
+      },
+      "תפקידי ליבה": {
+        "opens": 380.43121693121697,
+        "clicks": 37.714285714285715,
+        "count": 7
+      },
+      "מסלול +": {
+        "opens": -91.02592592592592,
+        "clicks": -11.6,
+        "count": 5
+      }
+    }
+  },
+  "monthly_statistics": [
+    {
+      "month_code": "01-2026",
+      "month_name": "ינואר",
+      "mailings_count": 19,
+      "total_sent": 13048,
+      "avg_open": 180.79,
+      "avg_click": 18.16,
+      "total_bounces": 20,
+      "bounce_rate": 0.153
+    },
+    {
+      "month_code": "02-2026",
+      "month_name": "פברואר",
+      "mailings_count": 23,
+      "total_sent": 14267,
+      "avg_open": 179.22,
+      "avg_click": 16.13,
+      "total_bounces": 10,
+      "bounce_rate": 0.07
+    },
+    {
+      "month_code": "03-2026",
+      "month_name": "מרץ",
+      "mailings_count": 30,
+      "total_sent": 40923,
+      "avg_open": 381.6,
+      "avg_click": 13.7,
+      "total_bounces": 674,
+      "bounce_rate": 1.647
+    },
+    {
+      "month_code": "04-2026",
+      "month_name": "אפריל",
+      "mailings_count": 16,
+      "total_sent": 6846,
+      "avg_open": 129.31,
+      "avg_click": 12.06,
+      "total_bounces": 9,
+      "bounce_rate": 0.131
+    },
+    {
+      "month_code": "05-2026",
+      "month_name": "מאי",
+      "mailings_count": 20,
+      "total_sent": 7198,
+      "avg_open": 120.4,
+      "avg_click": 15.0,
+      "total_bounces": 7,
+      "bounce_rate": 0.097
+    }
+  ],
+  "category_bounces": [
+    {
+      "category": "הדרכות ואירועים",
+      "total_sent": 41644,
+      "total_bounces": 679,
+      "avg_bounce_rate": 1.63
+    },
+    {
+      "category": "פעילות תחזוקה והשבתות",
+      "total_sent": 20285,
+      "total_bounces": 12,
+      "avg_bounce_rate": 0.059
+    },
+    {
+      "category": "עדכונים מקצועיים",
+      "total_sent": 1507,
+      "total_bounces": 2,
+      "avg_bounce_rate": 0.133
+    },
+    {
+      "category": "עדכונים על מוצרים",
+      "total_sent": 9260,
+      "total_bounces": 5,
+      "avg_bounce_rate": 0.054
+    },
+    {
+      "category": "שיווק",
+      "total_sent": 9176,
+      "total_bounces": 22,
+      "avg_bounce_rate": 0.24
+    },
+    {
+      "category": "אבטחת מידע וסייבר",
+      "total_sent": 410,
+      "total_bounces": 0,
+      "avg_bounce_rate": 0.0
+    }
+  ],
+  "subject_correlation": {
+    "char_len_open_corr": -0.14795831489032701,
+    "char_len_click_corr": -0.09632816661689628
+  },
+  "keyword_stats": [
+    {
+      "keyword": "וובינר",
+      "count": 11,
+      "avg_open_with": 432.27,
+      "avg_open_without": 193.06,
+      "open_diff": 239.21,
+      "avg_click_with": 51.64,
+      "avg_click_without": 10.85,
+      "click_diff": 40.79
+    },
+    {
+      "keyword": "עדכון",
+      "count": 14,
+      "avg_open_with": 133.5,
+      "avg_open_without": 229.93,
+      "open_diff": -96.43,
+      "avg_click_with": 4.93,
+      "avg_click_without": 16.5,
+      "click_diff": -11.57
+    },
+    {
+      "keyword": "חדש",
+      "count": 16,
+      "avg_open_with": 380.44,
+      "avg_open_without": 189.08,
+      "open_diff": 191.36,
+      "avg_click_with": 46.69,
+      "avg_click_without": 9.49,
+      "click_diff": 37.2
+    },
+    {
+      "keyword": "פעילות",
+      "count": 33,
+      "avg_open_with": 153.09,
+      "avg_open_without": 245.73,
+      "open_diff": -92.64,
+      "avg_click_with": 3.06,
+      "avg_click_without": 20.25,
+      "click_diff": -17.19
+    }
+  ],
+  "mailings": [
+    {
+      "id": 54341454,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 4-8.1.26",
+      "date": "2026-01-01",
+      "time": "14:46",
+      "sent": 1195,
+      "bounces": 2,
+      "open_rate": 340,
+      "click_rate": 7,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54346477,
+      "subject": "הזדהות אחודה IDP בשירות הטפסים",
+      "date": "2026-01-04",
+      "time": "10:46",
+      "sent": 1718,
+      "bounces": 1,
+      "open_rate": 283,
+      "click_rate": 0,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54335409,
+      "subject": "מערכת ההזדהות הלאומית - מסכמים את 2025",
+      "date": "2026-01-04",
+      "time": "10:54",
+      "sent": 535,
+      "bounces": 0,
+      "open_rate": 155,
+      "click_rate": 8,
+      "category": "שיווק",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54349165,
+      "subject": "GovExtra בגירסה משודרגת",
+      "date": "2026-01-05",
+      "time": "11:30",
+      "sent": 742,
+      "bounces": 2,
+      "open_rate": 131,
+      "click_rate": 8,
+      "category": "שיווק",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54348364,
+      "subject": "פורטל השירות החדש של מערך הדיגיטל באוויר!",
+      "date": "2026-01-05",
+      "time": "08:48",
+      "sent": 84,
+      "bounces": 0,
+      "open_rate": 41,
+      "click_rate": 0,
+      "category": "שיווק",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54357362,
+      "subject": "הרשמה לקורס מנהלים טכנולוגיים למנמ\"רים",
+      "date": "2026-01-07",
+      "time": "10:07",
+      "sent": 134,
+      "bounces": 0,
+      "open_rate": 57,
+      "click_rate": 21,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "רביעי"
+    },
+    {
+      "id": 54358675,
+      "subject": "פותחים את שנת 2026 עם גרסה חדשה ב-GOVEXTRA",
+      "date": "2026-01-07",
+      "time": "15:35",
+      "sent": 737,
+      "bounces": 0,
+      "open_rate": 156,
+      "click_rate": 12,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "רביעי"
+    },
+    {
+      "id": 54359742,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 11-15.1.26",
+      "date": "2026-01-08",
+      "time": "14:59",
+      "sent": 600,
+      "bounces": 5,
+      "open_rate": 169,
+      "click_rate": 5,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54363490,
+      "subject": "חסימת שירותים דיגיטליים לבעלי תעודות זהות שפג תוקפן",
+      "date": "2026-01-12",
+      "time": "08:00",
+      "sent": 22,
+      "bounces": 0,
+      "open_rate": 11,
+      "click_rate": 3,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54364456,
+      "subject": "תזכורת - עדכון בנושא החלפת מוצר העלאת קבצים",
+      "date": "2026-01-12",
+      "time": "09:00",
+      "sent": 421,
+      "bounces": 0,
+      "open_rate": 118,
+      "click_rate": 7,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54381476,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 18-22.1.26",
+      "date": "2026-01-15",
+      "time": "14:00",
+      "sent": 368,
+      "bounces": 0,
+      "open_rate": 100,
+      "click_rate": 2,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54409420,
+      "subject": "עבודות פעילות תחזוקה בסביבת B2G",
+      "date": "2026-01-22",
+      "time": "14:16",
+      "sent": 58,
+      "bounces": 0,
+      "open_rate": 21,
+      "click_rate": 0,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54421994,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 25-29.1.26",
+      "date": "2026-01-22",
+      "time": "14:20",
+      "sent": 669,
+      "bounces": 1,
+      "open_rate": 198,
+      "click_rate": 4,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54453799,
+      "subject": "mygov - שיאי שירות ודיגיטציה עבור התושבים והעסקים",
+      "date": "2026-01-26",
+      "time": "13:19",
+      "sent": 658,
+      "bounces": 1,
+      "open_rate": 168,
+      "click_rate": 0,
+      "category": "שיווק",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54452968,
+      "subject": "פורטל השירות החדש של מערך הדיגיטל - עלה לאוויר",
+      "date": "2026-01-27",
+      "time": "09:03",
+      "sent": 3931,
+      "bounces": 7,
+      "open_rate": 1099,
+      "click_rate": 217,
+      "category": "שיווק",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "שלישי"
+    },
+    {
+      "id": 54454082,
+      "subject": "תזכורת לשליחת מיפוי עדכונים על מוצרים - ניהול עלויות IT",
+      "date": "2026-01-27",
+      "time": "08:56",
+      "sent": 59,
+      "bounces": 0,
+      "open_rate": 33,
+      "click_rate": 12,
+      "category": "עדכונים מקצועיים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "שלישי"
+    },
+    {
+      "id": 54465739,
+      "subject": "תזכורת לשליחת מיפוי עדכונים על מוצרים - ניהול עלויות IT",
+      "date": "2026-01-29",
+      "time": "10:06",
+      "sent": 37,
+      "bounces": 0,
+      "open_rate": 14,
+      "click_rate": 4,
+      "category": "עדכונים מקצועיים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54448163,
+      "subject": "סוף עידן הכרטיס החכם",
+      "date": "2026-01-29",
+      "time": "10:35",
+      "sent": 589,
+      "bounces": 1,
+      "open_rate": 202,
+      "click_rate": 32,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54470267,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 1-5.2.26",
+      "date": "2026-01-29",
+      "time": "14:22",
+      "sent": 491,
+      "bounces": 0,
+      "open_rate": 139,
+      "click_rate": 3,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54482483,
+      "subject": "תזכורת - הרשמה לקורס מנהלים טכנולוגיים למנמ\"רים",
+      "date": "2026-02-01",
+      "time": "13:56",
+      "sent": 26,
+      "bounces": 0,
+      "open_rate": 10,
+      "click_rate": 1,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54486773,
+      "subject": "צפי לעומס חריגים בתשתיות האזור האישי",
+      "date": "2026-02-02",
+      "time": "09:00",
+      "sent": 479,
+      "bounces": 0,
+      "open_rate": 123,
+      "click_rate": 0,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54483001,
+      "subject": "השקת פרק חדש לפודקאסט \"נשים על הGOVה\"",
+      "date": "2026-02-02",
+      "time": "14:56",
+      "sent": 281,
+      "bounces": 0,
+      "open_rate": 75,
+      "click_rate": 1,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54493391,
+      "subject": "מחר - עבודות פעילות תחזוקה דחופות בסביבת האירוח",
+      "date": "2026-02-02",
+      "time": "11:54",
+      "sent": 366,
+      "bounces": 0,
+      "open_rate": 96,
+      "click_rate": 3,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54498881,
+      "subject": "שינוי מועד - עבודות להחלפת תעודה ב-OpenAPI",
+      "date": "2026-02-03",
+      "time": "14:01",
+      "sent": 288,
+      "bounces": 0,
+      "open_rate": 89,
+      "click_rate": 0,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "שלישי"
+    },
+    {
+      "id": 54504922,
+      "subject": "חיזוק אבטחת המידע וצמצום סיכוני פישינג",
+      "date": "2026-02-05",
+      "time": "09:00",
+      "sent": 410,
+      "bounces": 0,
+      "open_rate": 148,
+      "click_rate": 0,
+      "category": "אבטחת מידע וסייבר",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54510163,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 8-12.2.26",
+      "date": "2026-02-05",
+      "time": "14:24",
+      "sent": 604,
+      "bounces": 0,
+      "open_rate": 182,
+      "click_rate": 6,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54522501,
+      "subject": "שינוי שעות - עבודות פעילות תחזוקה ברכיב תשתית ענני",
+      "date": "2026-02-08",
+      "time": "17:24",
+      "sent": 438,
+      "bounces": 0,
+      "open_rate": 136,
+      "click_rate": 2,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54521596,
+      "subject": "שינוי בהגדרות הגישה לאתרי אינטרנט",
+      "date": "2026-02-09",
+      "time": "09:00",
+      "sent": 392,
+      "bounces": 0,
+      "open_rate": 117,
+      "click_rate": 0,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54549199,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 15-19.2.26",
+      "date": "2026-02-12",
+      "time": "14:56",
+      "sent": 633,
+      "bounces": 0,
+      "open_rate": 236,
+      "click_rate": 8,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54532601,
+      "subject": "מוצר הטפסים מסכם את שנת 2025",
+      "date": "2026-02-15",
+      "time": "09:00",
+      "sent": 1707,
+      "bounces": 3,
+      "open_rate": 299,
+      "click_rate": 0,
+      "category": "שיווק",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54567809,
+      "subject": "עבודות לעדכון סוכני XDR בשרתים",
+      "date": "2026-02-16",
+      "time": "14:36",
+      "sent": 392,
+      "bounces": 0,
+      "open_rate": 123,
+      "click_rate": 0,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54523080,
+      "subject": "מעבר מתשתית CyberArk לתשתית GoAnywhere",
+      "date": "2026-02-17",
+      "time": "10:00",
+      "sent": 460,
+      "bounces": 0,
+      "open_rate": 145,
+      "click_rate": 4,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "שלישי"
+    },
+    {
+      "id": 54583766,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 22-26.2.26",
+      "date": "2026-02-19",
+      "time": "14:42",
+      "sent": 748,
+      "bounces": 1,
+      "open_rate": 216,
+      "click_rate": 5,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54579845,
+      "subject": "תזכורת - עדכון בנושא החלפת מוצר העלאת קבצים (GFU)",
+      "date": "2026-02-19",
+      "time": "09:00",
+      "sent": 417,
+      "bounces": 0,
+      "open_rate": 103,
+      "click_rate": 3,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54482571,
+      "subject": "מוצר הסקרים עובר ל'מצב פעילות תחזוקה'",
+      "date": "2026-02-22",
+      "time": "13:49",
+      "sent": 292,
+      "bounces": 0,
+      "open_rate": 82,
+      "click_rate": 0,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54606868,
+      "subject": "הרשמו לוובינר מה חדש בדיגיטל Q1",
+      "date": "2026-02-24",
+      "time": "12:18",
+      "sent": 4404,
+      "bounces": 5,
+      "open_rate": 1258,
+      "click_rate": 215,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "שלישי"
+    },
+    {
+      "id": 54607814,
+      "subject": "קידום מודל Ask Once בממשלה - קבוצת מיקוד",
+      "date": "2026-02-24",
+      "time": "12:00",
+      "sent": 14,
+      "bounces": 0,
+      "open_rate": 5,
+      "click_rate": 0,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "שלישי"
+    },
+    {
+      "id": 54616908,
+      "subject": "תקצוב תוכנית הענן המשרדית לשנת 2026",
+      "date": "2026-02-25",
+      "time": "16:11",
+      "sent": 158,
+      "bounces": 1,
+      "open_rate": 96,
+      "click_rate": 30,
+      "category": "עדכונים מקצועיים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "רביעי"
+    },
+    {
+      "id": 54616833,
+      "subject": "עידן העבודה החדש בממשלה - Google Workspace",
+      "date": "2026-02-25",
+      "time": "10:22",
+      "sent": 423,
+      "bounces": 0,
+      "open_rate": 170,
+      "click_rate": 64,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "רביעי"
+    },
+    {
+      "id": 54605967,
+      "subject": "עדכון תעודות אבטחה בשירות הגלישה בענן",
+      "date": "2026-02-26",
+      "time": "12:57",
+      "sent": 419,
+      "bounces": 0,
+      "open_rate": 160,
+      "click_rate": 21,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54622708,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 1-5.3.26",
+      "date": "2026-02-26",
+      "time": "14:25",
+      "sent": 510,
+      "bounces": 0,
+      "open_rate": 143,
+      "click_rate": 8,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54622987,
+      "subject": "עבודות פעילות תחזוקה לטיפול בפגיעות בתשתית CISCO SD-WAN",
+      "date": "2026-02-26",
+      "time": "10:32",
+      "sent": 406,
+      "bounces": 0,
+      "open_rate": 110,
+      "click_rate": 0,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Purim",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54635526,
+      "subject": "דחיית הוובינר בנושא עידן העבודה החדש בממשלה - Google Workspace",
+      "date": "2026-03-01",
+      "time": "12:15",
+      "sent": 422,
+      "bounces": 1,
+      "open_rate": 116,
+      "click_rate": 0,
+      "category": "הדרכות ואירועים",
+      "near_holiday": true,
+      "holiday_name": "Purim",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54643742,
+      "subject": "הצטרפות למערכת אמו\"ן – הנחיות לצוות ה-IT המשרדי",
+      "date": "2026-03-04",
+      "time": "09:00",
+      "sent": 373,
+      "bounces": 1,
+      "open_rate": 128,
+      "click_rate": 29,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": true,
+      "holiday_name": "Purim",
+      "day_name_heb": "רביעי"
+    },
+    {
+      "id": 54644024,
+      "subject": "מערכות דיגיטליות לשעת חירום מבית מערך הדיגיטל הלאומי",
+      "date": "2026-03-04",
+      "time": "11:31",
+      "sent": 494,
+      "bounces": 1,
+      "open_rate": 167,
+      "click_rate": 24,
+      "category": "שיווק",
+      "near_holiday": true,
+      "holiday_name": "Purim",
+      "day_name_heb": "רביעי"
+    },
+    {
+      "id": 54646705,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 8-12.3.26",
+      "date": "2026-03-05",
+      "time": "14:17",
+      "sent": 650,
+      "bounces": 0,
+      "open_rate": 183,
+      "click_rate": 3,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54648344,
+      "subject": "מעבר להזדהות באמצעות GOVIDP - עדכון לוחות זמנים",
+      "date": "2026-03-06",
+      "time": "11:17",
+      "sent": 498,
+      "bounces": 1,
+      "open_rate": 153,
+      "click_rate": 14,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "שישי"
+    },
+    {
+      "id": 54650156,
+      "subject": "עדכון על עבודות פעילות תחזוקה לשבוע 8-12.3.26",
+      "date": "2026-03-08",
+      "time": "15:41",
+      "sent": 1450,
+      "bounces": 1,
+      "open_rate": 302,
+      "click_rate": 6,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54652612,
+      "subject": "תאריך חדש: קידום מודל Ask Once בממשלה - קבוצת מיקוד",
+      "date": "2026-03-09",
+      "time": "13:53",
+      "sent": 14,
+      "bounces": 0,
+      "open_rate": 5,
+      "click_rate": 0,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54652647,
+      "subject": "עדכון תאריכים: צפי לעומס חריגים בתשתיות האזור האישי",
+      "date": "2026-03-09",
+      "time": "14:57",
+      "sent": 472,
+      "bounces": 0,
+      "open_rate": 122,
+      "click_rate": 0,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54654284,
+      "subject": "יכולת חדשה בניהול כלכלת הענן - AWS LZ",
+      "date": "2026-03-10",
+      "time": "16:24",
+      "sent": 37,
+      "bounces": 0,
+      "open_rate": 19,
+      "click_rate": 0,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "שלישי"
+    },
+    {
+      "id": 54659115,
+      "subject": "לוח עבודות פעילות תחזוקה - מערך הדיגיטל הלאומי",
+      "date": "2026-03-12",
+      "time": "15:46",
+      "sent": 278,
+      "bounces": 0,
+      "open_rate": 82,
+      "click_rate": 3,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54658479,
+      "subject": "קידום הנגשת שירותים ממשלתיים דיגיטליים לחברה הערבית - החלטת ממשלה 550",
+      "date": "2026-03-15",
+      "time": "09:00",
+      "sent": 83,
+      "bounces": 0,
+      "open_rate": 34,
+      "click_rate": 0,
+      "category": "עדכונים מקצועיים",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54663297,
+      "subject": "השבוע - עבודות פעילות תחזוקה בזימון תורים (GoVisit)",
+      "date": "2026-03-16",
+      "time": "11:09",
+      "sent": 253,
+      "bounces": 0,
+      "open_rate": 80,
+      "click_rate": 1,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54657286,
+      "subject": "בקשות לפיתוחים ושינויים במערכת מסלול+",
+      "date": "2026-03-16",
+      "time": "09:00",
+      "sent": 73,
+      "bounces": 0,
+      "open_rate": 25,
+      "click_rate": 4,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54666346,
+      "subject": "הרשמו לוובינר מה חדש בדיגיטל - כלים ופתרונות למשרדי הממשלה בחירום",
+      "date": "2026-03-17",
+      "time": "13:07",
+      "sent": 4232,
+      "bounces": 3,
+      "open_rate": 1177,
+      "click_rate": 93,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "שלישי"
+    },
+    {
+      "id": 54652910,
+      "subject": "הפסקת שירות Data Power והסבת השירותים לשדרת המידע",
+      "date": "2026-03-17",
+      "time": "11:45",
+      "sent": 408,
+      "bounces": 0,
+      "open_rate": 116,
+      "click_rate": 5,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "שלישי"
+    },
+    {
+      "id": 54652094,
+      "subject": "השקת פרק חדש לפודקאסט \"נשים על הGOVה\"",
+      "date": "2026-03-18",
+      "time": "09:00",
+      "sent": 277,
+      "bounces": 1,
+      "open_rate": 84,
+      "click_rate": 6,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "רביעי"
+    },
+    {
+      "id": 54670430,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 22-26.3.26",
+      "date": "2026-03-19",
+      "time": "14:30",
+      "sent": 477,
+      "bounces": 0,
+      "open_rate": 157,
+      "click_rate": 1,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54670822,
+      "subject": "עדכון רולים בקונקטור בהתאם לדוקומנטציה החדשה של WIZ",
+      "date": "2026-03-19",
+      "time": "14:34",
+      "sent": 67,
+      "bounces": 0,
+      "open_rate": 27,
+      "click_rate": 1,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54673899,
+      "subject": "עדכון תאריכים: צפי לעומסים חריגים בתשתיות האזור האישי",
+      "date": "2026-03-22",
+      "time": "10:24",
+      "sent": 471,
+      "bounces": 0,
+      "open_rate": 128,
+      "click_rate": 0,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54674855,
+      "subject": "מחר! וובינר מה חדש בדיגיטל - כלים ופתרונות למשרדי הממשלה בחירום",
+      "date": "2026-03-22",
+      "time": "15:06",
+      "sent": 4152,
+      "bounces": 1,
+      "open_rate": 1340,
+      "click_rate": 53,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54676456,
+      "subject": "שיתוף במאגר הקוד הממשלתי - אוטומציות לניהול כלכלת ענן ב-GCP",
+      "date": "2026-03-23",
+      "time": "13:06",
+      "sent": 192,
+      "bounces": 0,
+      "open_rate": 70,
+      "click_rate": 10,
+      "category": "עדכונים מקצועיים",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54671733,
+      "subject": "שינוי בתדירות חידוש תעודות SSL",
+      "date": "2026-03-23",
+      "time": "15:42",
+      "sent": 485,
+      "bounces": 1,
+      "open_rate": 156,
+      "click_rate": 0,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54679432,
+      "subject": "GOVEXTRA עובר לתשתית הזדהות GovIDP",
+      "date": "2026-03-25",
+      "time": "10:04",
+      "sent": 921,
+      "bounces": 0,
+      "open_rate": 279,
+      "click_rate": 14,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "רביעי"
+    },
+    {
+      "id": 54679268,
+      "subject": "סיכום וובינר 'מה חדש בדיגיטל' מתאריך 23.3.26",
+      "date": "2026-03-25",
+      "time": "08:30",
+      "sent": 529,
+      "bounces": 1,
+      "open_rate": 217,
+      "click_rate": 47,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "רביעי"
+    },
+    {
+      "id": 54687494,
+      "subject": "חג פסח שמח מ-GOVEXTRA",
+      "date": "2026-03-26",
+      "time": "12:47",
+      "sent": 730,
+      "bounces": 0,
+      "open_rate": 200,
+      "click_rate": 0,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54688108,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי 29-31.3.26",
+      "date": "2026-03-26",
+      "time": "14:56",
+      "sent": 327,
+      "bounces": 0,
+      "open_rate": 106,
+      "click_rate": 4,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Passover",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54678392,
+      "subject": "חג שמח ממערך הדיגיטל הלאומי",
+      "date": "2026-03-29",
+      "time": "10:03",
+      "sent": 8929,
+      "bounces": 449,
+      "open_rate": 2798,
+      "click_rate": 79,
+      "category": "הדרכות ואירועים",
+      "near_holiday": true,
+      "holiday_name": "Passover",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54678179,
+      "subject": "חג שמח ממערך הדיגיטל הלאומי",
+      "date": "2026-03-30",
+      "time": "12:20",
+      "sent": 13266,
+      "bounces": 213,
+      "open_rate": 3036,
+      "click_rate": 14,
+      "category": "הדרכות ואירועים",
+      "near_holiday": true,
+      "holiday_name": "Passover",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54693389,
+      "subject": "חג פסח שמח ושקט מצוות הזדהות לאומית",
+      "date": "2026-03-30",
+      "time": "12:02",
+      "sent": 206,
+      "bounces": 0,
+      "open_rate": 53,
+      "click_rate": 0,
+      "category": "הדרכות ואירועים",
+      "near_holiday": true,
+      "holiday_name": "Passover",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54695166,
+      "subject": "הקצאת תקציב למימוש מפות הדרכים לנימבוס",
+      "date": "2026-03-31",
+      "time": "10:08",
+      "sent": 157,
+      "bounces": 0,
+      "open_rate": 88,
+      "click_rate": 0,
+      "category": "עדכונים מקצועיים",
+      "near_holiday": true,
+      "holiday_name": "Passover",
+      "day_name_heb": "שלישי"
+    },
+    {
+      "id": 54720580,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 12-16.4.26",
+      "date": "2026-04-09",
+      "time": "14:18",
+      "sent": 535,
+      "bounces": 0,
+      "open_rate": 153,
+      "click_rate": 1,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Yom HaAtzmaut",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54687205,
+      "subject": "יישום החלטת ממשלה 3573 - ASK ONCE - הזמנה לוובינר",
+      "date": "2026-04-12",
+      "time": "09:00",
+      "sent": 546,
+      "bounces": 0,
+      "open_rate": 203,
+      "click_rate": 62,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Yom HaAtzmaut",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54753636,
+      "subject": "השבוע - עבודות פעילות תחזוקה באפליקציית MyGov",
+      "date": "2026-04-12",
+      "time": "11:09",
+      "sent": 331,
+      "bounces": 0,
+      "open_rate": 102,
+      "click_rate": 1,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Yom HaAtzmaut",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54765945,
+      "subject": "צרכי ה-GPU של משרדכם לשנים הקרובות",
+      "date": "2026-04-13",
+      "time": "15:44",
+      "sent": 202,
+      "bounces": 1,
+      "open_rate": 82,
+      "click_rate": 28,
+      "category": "עדכונים מקצועיים",
+      "near_holiday": false,
+      "holiday_name": "Yom HaAtzmaut",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54753868,
+      "subject": "הזמנה לפורום שותפים Mygov",
+      "date": "2026-04-13",
+      "time": "13:02",
+      "sent": 266,
+      "bounces": 1,
+      "open_rate": 90,
+      "click_rate": 18,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Yom HaAtzmaut",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54771392,
+      "subject": "עדכון הרשאות לחשבונות שירות - LZ GCP",
+      "date": "2026-04-15",
+      "time": "08:58",
+      "sent": 86,
+      "bounces": 0,
+      "open_rate": 42,
+      "click_rate": 2,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Yom HaAtzmaut",
+      "day_name_heb": "רביעי"
+    },
+    {
+      "id": 54777863,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 19-23.4.26",
+      "date": "2026-04-16",
+      "time": "14:30",
+      "sent": 720,
+      "bounces": 0,
+      "open_rate": 207,
+      "click_rate": 3,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Yom HaAtzmaut",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54765067,
+      "subject": "מעבר לניהול זהויות מבוסס GovIDP",
+      "date": "2026-04-19",
+      "time": "12:05",
+      "sent": 112,
+      "bounces": 0,
+      "open_rate": 48,
+      "click_rate": 6,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": true,
+      "holiday_name": "Yom HaAtzmaut",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54782197,
+      "subject": "השקת פרק חדש לפודקאסט \"נשים על הGOVה\"",
+      "date": "2026-04-19",
+      "time": "09:00",
+      "sent": 278,
+      "bounces": 0,
+      "open_rate": 83,
+      "click_rate": 1,
+      "category": "הדרכות ואירועים",
+      "near_holiday": true,
+      "holiday_name": "Yom HaAtzmaut",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54782448,
+      "subject": "עדכון בנושא החלפת תעודה ציבורית בצומת השירותים",
+      "date": "2026-04-20",
+      "time": "09:13",
+      "sent": 463,
+      "bounces": 0,
+      "open_rate": 156,
+      "click_rate": 11,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": true,
+      "holiday_name": "Yom HaAtzmaut",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54819977,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 26-30.4.26",
+      "date": "2026-04-23",
+      "time": "14:30",
+      "sent": 801,
+      "bounces": 0,
+      "open_rate": 223,
+      "click_rate": 6,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54797078,
+      "subject": "תזכורת - הזמנה לפורום שותפים Mygov",
+      "date": "2026-04-23",
+      "time": "09:00",
+      "sent": 263,
+      "bounces": 0,
+      "open_rate": 86,
+      "click_rate": 12,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54783048,
+      "subject": "מעבר להזדהות באמצעות GovIDP - שירותי מערך הדיגיטל הלאומי",
+      "date": "2026-04-27",
+      "time": "09:00",
+      "sent": 533,
+      "bounces": 7,
+      "open_rate": 171,
+      "click_rate": 18,
+      "category": "שיווק",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54845757,
+      "subject": "נדחה - עבודות פעילות תחזוקה במערכת מסלול",
+      "date": "2026-04-28",
+      "time": "10:35",
+      "sent": 382,
+      "bounces": 0,
+      "open_rate": 108,
+      "click_rate": 1,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "שלישי"
+    },
+    {
+      "id": 54857608,
+      "subject": "GovIDP עובר לתשתית הזדהות Govextra",
+      "date": "2026-04-30",
+      "time": "13:20",
+      "sent": 733,
+      "bounces": 0,
+      "open_rate": 158,
+      "click_rate": 22,
+      "category": "עדכונים על מוצרים",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54857523,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 3-7.5.26",
+      "date": "2026-04-30",
+      "time": "14:16",
+      "sent": 595,
+      "bounces": 0,
+      "open_rate": 157,
+      "click_rate": 1,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54845645,
+      "subject": "סיכום וובינר בנושא יישום החלטת ממשלה 3573 - ASK ONCE",
+      "date": "2026-05-03",
+      "time": "15:09",
+      "sent": 331,
+      "bounces": 0,
+      "open_rate": 112,
+      "click_rate": 25,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54852514,
+      "subject": "ימי העשרה בתחום DevOps בענן",
+      "date": "2026-05-03",
+      "time": "14:24",
+      "sent": 114,
+      "bounces": 1,
+      "open_rate": 47,
+      "click_rate": 10,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54874466,
+      "subject": "השבוע - עבודות פעילות תחזוקה בשרתי רשות האוכלוסין",
+      "date": "2026-05-03",
+      "time": "16:36",
+      "sent": 509,
+      "bounces": 1,
+      "open_rate": 154,
+      "click_rate": 2,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54873276,
+      "subject": "עדכון - עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 3-7.5.26",
+      "date": "2026-05-03",
+      "time": "13:01",
+      "sent": 389,
+      "bounces": 1,
+      "open_rate": 112,
+      "click_rate": 2,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54879459,
+      "subject": "סיכום וובינר בנושא יישום החלטת ממשלה 3573 - ASK ONCE",
+      "date": "2026-05-04",
+      "time": "10:47",
+      "sent": 128,
+      "bounces": 1,
+      "open_rate": 40,
+      "click_rate": 9,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54858416,
+      "subject": "הנחיות משלימות לגיבוש סיכומים תקציביים - מפת הדרכים לנימבוס",
+      "date": "2026-05-04",
+      "time": "10:44",
+      "sent": 157,
+      "bounces": 0,
+      "open_rate": 68,
+      "click_rate": 14,
+      "category": "עדכונים מקצועיים",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "שני"
+    },
+    {
+      "id": 54881107,
+      "subject": "חדש! הזדהות ל-GovIDP ללא סיסמה",
+      "date": "2026-05-05",
+      "time": "12:18",
+      "sent": 492,
+      "bounces": 1,
+      "open_rate": 220,
+      "click_rate": 37,
+      "category": "שיווק",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "שלישי"
+    },
+    {
+      "id": 54897848,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 10-14.5.26",
+      "date": "2026-05-07",
+      "time": "14:25",
+      "sent": 388,
+      "bounces": 0,
+      "open_rate": 126,
+      "click_rate": 3,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54679238,
+      "subject": "הקול הקורא להטמעת בינה מלאכותית בממשלה יוצא לדרך!",
+      "date": "2026-05-10",
+      "time": "16:38",
+      "sent": 462,
+      "bounces": 0,
+      "open_rate": 177,
+      "click_rate": 20,
+      "category": "עדכונים מקצועיים",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54929574,
+      "subject": "וובינר להצגת הקול הקורא להטמעת בינה מלאכותית בממשלה",
+      "date": "2026-05-13",
+      "time": "13:00",
+      "sent": 462,
+      "bounces": 0,
+      "open_rate": 131,
+      "click_rate": 30,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "רביעי"
+    },
+    {
+      "id": 54930797,
+      "subject": "הזמנה למפגש פרידה מראשת מערך הדיגיטל היוצאת",
+      "date": "2026-05-13",
+      "time": "17:44",
+      "sent": 297,
+      "bounces": 1,
+      "open_rate": 189,
+      "click_rate": 85,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "רביעי"
+    },
+    {
+      "id": 54935621,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 17-21.5.26",
+      "date": "2026-05-14",
+      "time": "14:30",
+      "sent": 488,
+      "bounces": 0,
+      "open_rate": 190,
+      "click_rate": 3,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "חמישי"
+    },
+    {
+      "id": 54949712,
+      "subject": "תזכורת הרשמה לוובינר הקול הקורא להטמעת בינה מלאכותית בממשלה",
+      "date": "2026-05-17",
+      "time": "10:54",
+      "sent": 462,
+      "bounces": 0,
+      "open_rate": 125,
+      "click_rate": 20,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54949867,
+      "subject": "תזכורת - החלפת תעודה ציבורית בצומת השירותים",
+      "date": "2026-05-17",
+      "time": "11:55",
+      "sent": 467,
+      "bounces": 0,
+      "open_rate": 147,
+      "click_rate": 9,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54949396,
+      "subject": "עדכון - עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 17-21.5.26",
+      "date": "2026-05-17",
+      "time": "10:22",
+      "sent": 515,
+      "bounces": 0,
+      "open_rate": 144,
+      "click_rate": 1,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54964556,
+      "subject": "מוזמנים למפגש פרידה מראשת מערך הדיגיטל היוצאת",
+      "date": "2026-05-19",
+      "time": "14:58",
+      "sent": 194,
+      "bounces": 0,
+      "open_rate": 75,
+      "click_rate": 10,
+      "category": "הדרכות ואירועים",
+      "near_holiday": true,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "שלישי"
+    },
+    {
+      "id": 54965106,
+      "subject": "סיכום וובינר הקול הקורא להטמעת בינה מלאכותית בממשלה",
+      "date": "2026-05-19",
+      "time": "16:30",
+      "sent": 79,
+      "bounces": 1,
+      "open_rate": 36,
+      "click_rate": 14,
+      "category": "הדרכות ואירועים",
+      "near_holiday": true,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "שלישי"
+    },
+    {
+      "id": 54970756,
+      "subject": "עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 24-28.5.26",
+      "date": "2026-05-20",
+      "time": "14:30",
+      "sent": 458,
+      "bounces": 0,
+      "open_rate": 119,
+      "click_rate": 5,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": true,
+      "holiday_name": "Shavuot",
+      "day_name_heb": "רביעי"
+    },
+    {
+      "id": 54980657,
+      "subject": "עדכון - עבודות פעילות תחזוקה מערך הדיגיטל הלאומי לשבוע 24-28.5.26",
+      "date": "2026-05-24",
+      "time": "10:07",
+      "sent": 621,
+      "bounces": 0,
+      "open_rate": 179,
+      "click_rate": 1,
+      "category": "פעילות תחזוקה והשבתות",
+      "near_holiday": false,
+      "holiday_name": "None",
+      "day_name_heb": "ראשון"
+    },
+    {
+      "id": 54981342,
+      "subject": "תזכורת - מפגש פרידה מראשת מערך הדיגיטל היוצאת",
+      "date": "2026-05-24",
+      "time": "12:11",
+      "sent": 185,
+      "bounces": 0,
+      "open_rate": 17,
+      "click_rate": 0,
+      "category": "הדרכות ואירועים",
+      "near_holiday": false,
+      "holiday_name": "None",
+      "day_name_heb": "ראשון"
+    }
+  ]
+}

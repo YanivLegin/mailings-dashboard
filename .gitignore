@@ -1,0 +1,19 @@
+# Ignore python scripts
+generate_dashboard_data.py
+inspect_data.py
+inspect_details.py
+clean_inspect.py
+parse_recipients.py
+test_holidays.py
+inspect_high_opens.py
+inspect_admin_insights.py
+
+# Ignore source data
+דיוורים לפי קטגוריות.xlsx
+
+# OS generated files
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
