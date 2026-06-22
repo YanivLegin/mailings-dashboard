@@ -716,7 +716,7 @@ function renderRecommendations() {
         iconBg:"rgba(245,158,11,.12)", iconColor:"var(--accent-orange)",
         category:"🏆 Best Practice — 3 דיוורי השיא",
         title:`שיא: "${top3[0].subject.slice(0,32)}${top3[0].subject.length>32?"…":""}" — ${top3[0].open_rate}% פתיחה`,
-        body:`3 המוצלחים ביותר מ-${mails.length} דיוורים. ${sharedCat?`כולם מ-"${top3[0].category}"`:‌"מקטגוריות שונות — הצלחה תלויה בתזמון ובניסוח"}. ממוצע שלושתם: <strong>${Math.round(top3.reduce((a,m)=>a+m.open_rate,0)/3*10)/10}%</strong>.`,
+        body:`3 המוצלחים ביותר מ-${mails.length} דיוורים. ${sharedCat?`כולם מ-"${top3[0].category}"`:"מקטגוריות שונות — הצלחה תלויה בתזמון ובניסוח"}. ממוצע שלושתם: <strong>${Math.round(top3.reduce((a,m)=>a+m.open_rate,0)/3*10)/10}%</strong>.`,
         comparisons:top3.map((m,i)=>({
             label:`#${i+1}: ${m.subject.slice(0,28)}… | ${m.date} ${m.time}`,
             val:`${m.open_rate}% פתיחה`, cls:"up"
