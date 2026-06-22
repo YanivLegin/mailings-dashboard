@@ -156,29 +156,39 @@
                         </select>
                     </div>
                     <div class="input-group">
-                        <label><i class="fa-solid fa-calendar-check"></i> סמיכות לחג יהודי</label>
-                        <div class="radio-group">
-                            <label class="radio-label"><input type="radio" name="sim-holiday" value="true"><span>סמוך לחג</span></label>
-                            <label class="radio-label"><input type="radio" name="sim-holiday" value="false" checked><span>יום רגיל</span></label>
-                        </div>
+                        <label for="sim-holiday"><i class="fa-solid fa-star-and-crescent"></i> קרבה לחג יהודי</label>
+                        <select id="sim-holiday" class="form-control">
+                            <option value="none">📅 יום רגיל (ללא חג)</option>
+                            <optgroup label="── חגי תשרי ──">
+                                <option value="near">🍎 ראש השנה</option>
+                                <option value="near">🕯️ יום כיפור</option>
+                                <option value="near">🌿 סוכות / שמחת תורה</option>
+                            </optgroup>
+                            <optgroup label="── חגי שבט–סיון ──">
+                                <option value="near">🎭 פורים</option>
+                                <option value="near">🫓 פסח</option>
+                                <option value="near">🇮🇱 יום העצמאות</option>
+                                <option value="near">📜 שבועות</option>
+                            </optgroup>
+                        </select>
                     </div>
                 </div>
                 <div class="input-group">
-                    <label><i class="fa-solid fa-users-gear"></i> קבוצות נמענים מפתח</label>
+                    <label><i class="fa-solid fa-users-gear"></i> קבוצות נמענים <span id="groups-category-hint" style="font-weight:400;color:var(--accent-cyan);font-size:11px"></span></label>
                     <div class="groups-checkbox-grid" id="groups-checkboxes-container"></div>
                 </div>
             </div>
             <div class="simulator-outputs">
                 <div class="prediction-meters">
                     <div class="meter-card">
-                        <span class="meter-title">חזוי פתיחות</span>
+                        <span class="meter-title">% פתיחה צפויה</span>
                         <div class="progress-circle" id="pred-open-circle" style="--value:0">
                             <div class="circle-inner"><span class="value outfit" id="pred-open-val">0%</span></div>
                         </div>
                         <span class="meter-sub" id="pred-open-diff"></span>
                     </div>
                     <div class="meter-card">
-                        <span class="meter-title">חזוי הקלקות</span>
+                        <span class="meter-title">% הקלקות צפויה</span>
                         <div class="progress-circle click-meter" id="pred-click-circle" style="--value:0">
                             <div class="circle-inner"><span class="value outfit" id="pred-click-val">0%</span></div>
                         </div>
