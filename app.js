@@ -1,5 +1,6 @@
 let dashboardData = null;
 let charts = {};
+let allRecs = [];
 
 document.addEventListener("DOMContentLoaded", loadDashboardData);
 
@@ -16,6 +17,7 @@ function loadDashboardData() {
             renderCharts();
             renderRecipientInfluenceCards();
             renderMailingActivityGrid();
+            renderRecommendations();
             renderHistoryTable(data.mailings);
             setupTableListeners();
             runPrediction();
@@ -450,3 +452,322 @@ function setupTableListeners() {
     }));
     si.addEventListener("input",filter); cf.addEventListener("change",filter);
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   RECOMMENDATIONS ENGINE
+   Generates data-driven recommendations and renders them as cards
+═══════════════════════════════════════════════════════════════ */
+
+function renderRecommendations() {
+    const d    = dashboardData;
+    const s    = d.overall_stats;
+    const cats = d.categories;
+    const days = d.days_of_week;
+    const kw   = d.keyword_stats;
+    const bounce = d.category_bounces;
+    const mo   = d.monthly_statistics;
+    const corr = d.subject_correlation;
+    const grps = d.recipient_groups_influence;
+    const mails = d.mailings;
+
+    allRecs = [];
+
+    /* ── 1. BOUNCE ALERTS ── */
+    const bounceSorted = [...bounce].sort((a,b)=>b.avg_bounce_rate-a.avg_bounce_rate);
+    bounceSorted.forEach(b => {
+        if (b.avg_bounce_rate >= 0.5) {
+            allRecs.push({
+                priority: b.avg_bounce_rate >= 1 ? "critical" : "high",
+                icon: "fa-triangle-exclamation", iconBg: "rgba(239,68,68,.12)", iconColor: "var(--accent-red)",
+                category: "🔴 Deliverability — בריאות שרת",
+                title: `שיעור חזרות גבוה — קטגוריה "${b.category}"`,
+                body: `קטגוריה זו מציגה שיעור חזרות (Bounce Rate) של <strong>${b.avg_bounce_rate}%</strong> — מעל הסף המקובל של 0.5%. ${b.total_bounces.toLocaleString()} הודעות לא הגיעו ליעדן מתוך ${b.total_sent.toLocaleString()} שליחות.`,
+                metrics: [
+                    { label: "Bounce Rate", val: `${b.avg_bounce_rate}%`, cls: "down" },
+                    { label: "הודעות שנחסמו", val: b.total_bounces.toLocaleString(), cls: "down" }
+                ],
+                actions: [
+                    "נקה את רשימת הנמענים — הסר כתובות שחוזרות באופן קבוע (Hard Bounces)",
+                    "השתמש בכלי אימות דוא\"ל (Email Validation) לפני שליחה",
+                    "בצע Double Opt-In לנמענים חדשים בקטגוריה זו"
+                ]
+            });
+        }
+    });
+
+    /* ── 2. TIMING OPTIMIZATION ── */
+    const bestDayEntry = Object.entries(days).sort((a,b)=>b[1].avg_open-a[1].avg_open)[0];
+    const worstDayEntry = Object.entries(days).filter(([,v])=>v.count>0).sort((a,b)=>a[1].avg_open-b[1].avg_open)[0];
+    const dayDiff = Math.round((bestDayEntry[1].avg_open - worstDayEntry[1].avg_open)*100)/100;
+    allRecs.push({
+        priority: "high",
+        icon: "fa-calendar-star", iconBg: "rgba(245,158,11,.12)", iconColor: "var(--accent-orange)",
+        category: "⏰ אופטימיזציית תזמון",
+        title: `שלח ביום ${bestDayEntry[0]} — יתרון של ${dayDiff}% פתיחות`,
+        body: `יום <strong>${bestDayEntry[0]}</strong> הוא יום השיא עם <strong>${bestDayEntry[1].avg_open}%</strong> פתיחה בממוצע. יום <strong>${worstDayEntry[0]}</strong> הוא החלש ביותר עם ${worstDayEntry[1].avg_open}% בלבד. ההפרש הוא <strong>${dayDiff} נקודות אחוז</strong>.`,
+        metrics: [
+            { label: `יום ${bestDayEntry[0]} (שיא)`, val: `${bestDayEntry[1].avg_open}%`, cls: "up" },
+            { label: `יום ${worstDayEntry[0]} (חלש)`, val: `${worstDayEntry[1].avg_open}%`, cls: "down" }
+        ],
+        actions: [
+            `רכז את הדיוורים החשובים ביום ${bestDayEntry[0]}`,
+            `הימנע מתזמון דיוורים קריטיים ביום ${worstDayEntry[0]}`,
+            "בדוק את נתוני שעות השיא בתוך ימי השיא"
+        ]
+    });
+
+    /* ── 3. HOURLY PEAK ── */
+    const hourSums = {};
+    mails.forEach(m => {
+        const h = parseInt(m.time.split(":")[0]);
+        if (!hourSums[h]) hourSums[h] = { sum:0, count:0 };
+        hourSums[h].sum += m.open_rate; hourSums[h].count++;
+    });
+    const hourRanked = Object.entries(hourSums).map(([h,v])=>({h:parseInt(h),avg:Math.round(v.sum/v.count*100)/100,count:v.count})).sort((a,b)=>b.avg-a.avg);
+    const topHour = hourRanked[0];
+    const worstHour = hourRanked[hourRanked.length-1];
+    allRecs.push({
+        priority: "high",
+        icon: "fa-clock", iconBg: "var(--primary-glow)", iconColor: "var(--primary)",
+        category: "⏰ אופטימיזציית תזמון",
+        title: `שעת שיא: ${topHour.h.toString().padStart(2,"0")}:00 — ${topHour.avg}% פתיחה`,
+        body: `הדיוורים שנשלחו בשעה <strong>${topHour.h}:00</strong> השיגו ממוצע של <strong>${topHour.avg}%</strong> פתיחה (על פני ${topHour.count} דיוורים). הימנע מהשעה <strong>${worstHour.h}:00</strong> — ממוצע ${worstHour.avg}% בלבד.`,
+        metrics: [
+            { label: `שעה ${topHour.h}:00 (שיא)`, val: `${topHour.avg}%`, cls: "up" },
+            { label: `שעה ${worstHour.h}:00 (חלשה)`, val: `${worstHour.avg}%`, cls: "down" }
+        ],
+        actions: [
+            `תזמן שליחות לפני ${topHour.h}:00 כדי לנצל את שיא הקריאה`,
+            "שלב בין יום השיא לשעת השיא לתוצאות מקסימליות",
+            "בדוק A/B testing של שעות שונות בכל קטגוריה"
+        ]
+    });
+
+    /* ── 4. SUBJECT LINE LENGTH ── */
+    const subjectLens = mails.map(m=>m.subject.length);
+    const avgLen = Math.round(subjectLens.reduce((a,b)=>a+b,0)/subjectLens.length);
+    const top10Opens = [...mails].sort((a,b)=>b.open_rate-a.open_rate).slice(0,10);
+    const avgLenTop10 = Math.round(top10Opens.reduce((a,m)=>a+m.subject.length,0)/top10Opens.length);
+    const corrDir = corr.char_len_open_corr < 0 ? "שלילי" : "חיובי";
+    allRecs.push({
+        priority: corr.char_len_open_corr < -0.15 ? "high" : "medium",
+        icon: "fa-pen-nib", iconBg: "rgba(168,85,247,.12)", iconColor: "#a855f7",
+        category: "✍️ אופטימיזציית כותרת",
+        title: `כותרות קצרות מניבות יותר — מתאם ${corrDir} (${corr.char_len_open_corr.toFixed(2)})`,
+        body: `אורך ממוצע של כותרת: <strong>${avgLen} תווים</strong>. כותרות הדיוורים עם אחוזי הפתיחה הגבוהים ביותר (Top 10) מכילות ממוצע של <strong>${avgLenTop10} תווים</strong> בלבד. המתאם בין אורך לפתיחה הוא <strong>${corr.char_len_open_corr.toFixed(3)}</strong>.`,
+        metrics: [
+            { label: "אורך ממוצע כלל הכותרות", val: `${avgLen} תווים`, cls: "warn" },
+            { label: "אורך ממוצע — Top 10", val: `${avgLenTop10} תווים`, cls: "up" }
+        ],
+        actions: [
+            `שאף לכותרות של עד ${avgLenTop10 + 5} תווים`,
+            "העבר מידע מפורט לגוף המייל, השאר את הכותרת ממוקדת",
+            "בדוק תצוגה מקדימה בניידים — גבול: כ-40 תווים גלויים"
+        ]
+    });
+
+    /* ── 5. KEYWORD RECOMMENDATIONS ── */
+    if (kw.length > 0) {
+        const kwSorted = [...kw].sort((a,b)=>b.open_diff-a.open_diff);
+        const bestKw   = kwSorted[0];
+        const worstKw  = kwSorted[kwSorted.length-1];
+        if (bestKw.open_diff > 1) {
+            allRecs.push({
+                priority: "medium",
+                icon: "fa-fire", iconBg: "rgba(245,158,11,.12)", iconColor: "var(--accent-orange)",
+                category: "✍️ אופטימיזציית כותרת — מילות מפתח",
+                title: `"${bestKw.keyword}" — מגדיל פתיחות ב-${bestKw.open_diff}%`,
+                body: `דיוורים שהכותרת שלהם מכילה את המילה <strong>"${bestKw.keyword}"</strong> השיגו <strong>${bestKw.avg_open_with}%</strong> פתיחה, לעומת ${bestKw.avg_open_without}% ללא המילה — יתרון של <strong>+${bestKw.open_diff}%</strong>.`,
+                metrics: [
+                    { label: `עם "${bestKw.keyword}"`, val: `${bestKw.avg_open_with}%`, cls: "up" },
+                    { label: "ללא המילה", val: `${bestKw.avg_open_without}%`, cls: "warn" }
+                ],
+                actions: [
+                    `שלב את המילה "${bestKw.keyword}" בכותרות הדיוורים החשובים`,
+                    "אל תאחל אוטומטית — וודא שהמילה רלוונטית לתוכן",
+                    "נסה וריאציות נוספות: הרשמו עכשיו, כנסו, הצטרפו"
+                ]
+            });
+        }
+        if (worstKw.open_diff < -1) {
+            allRecs.push({
+                priority: "medium",
+                icon: "fa-ban", iconBg: "rgba(239,68,68,.08)", iconColor: "var(--accent-red)",
+                category: "✍️ אופטימיזציית כותרת — מילות להימנע",
+                title: `"${worstKw.keyword}" — מפחית פתיחות ב-${Math.abs(worstKw.open_diff)}%`,
+                body: `דיוורים עם המילה <strong>"${worstKw.keyword}"</strong> בכותרת מגיעים ל-<strong>${worstKw.avg_open_with}%</strong> פתיחה — <strong>${Math.abs(worstKw.open_diff)}%</strong> פחות מהממוצע. שקול לנסח מחדש.`,
+                metrics: [
+                    { label: `עם "${worstKw.keyword}"`, val: `${worstKw.avg_open_with}%`, cls: "down" },
+                    { label: "ממוצע ללא המילה", val: `${worstKw.avg_open_without}%`, cls: "up" }
+                ],
+                actions: [
+                    `הגבל את השימוש ב-"${worstKw.keyword}" או נסח בצורה פעילה יותר`,
+                    "המר ניסוח פסיבי לפעיל: 'עדכון חשוב' → 'חידוש שחייבים לדעת'",
+                    "בצע A/B testing עם ניסוח חלופי"
+                ]
+            });
+        }
+    }
+
+    /* ── 6. UNDERPERFORMING CATEGORIES ── */
+    const catList = Object.entries(cats).map(([k,v])=>({name:k,...v}));
+    const avgOpenAll = s.avg_open_rate;
+    catList.filter(c=>c.avg_open < avgOpenAll - 5).forEach(c => {
+        allRecs.push({
+            priority: "medium",
+            icon: "fa-arrow-trend-down", iconBg: "rgba(239,68,68,.08)", iconColor: "var(--accent-red)",
+            category: `📉 קטגוריה: ${c.name}`,
+            title: `קטגוריה מתחת לממוצע — "${c.name}"`,
+            body: `קטגוריה זו משיגה <strong>${c.avg_open}%</strong> פתיחה — <strong>${Math.round((avgOpenAll - c.avg_open)*10)/10}%</strong> מתחת לממוצע הכולל (${avgOpenAll}%). שעת השיא לקטגוריה: <strong>${c.best_hour}:00</strong>, יום השיא: <strong>${c.best_day}</strong>.`,
+            metrics: [
+                { label: "ממוצע פתיחה", val: `${c.avg_open}%`, cls: "down" },
+                { label: "ממוצע ממוצע הכולל", val: `${avgOpenAll}%`, cls: "warn" }
+            ],
+            actions: [
+                `תזמן לשעת השיא ${c.best_hour}:00 ביום ${c.best_day} — פוטנציאל שיפור ניכר`,
+                "בחן את קהל היעד — האם הם רלוונטיים לתוכן?",
+                "בצע פילוח ושלח גרסאות מותאמות לתת-קבוצות"
+            ]
+        });
+    });
+
+    /* ── 7. TOP CATEGORY — learn from the best ── */
+    const topCat = catList.sort((a,b)=>b.avg_open-a.avg_open)[0];
+    allRecs.push({
+        priority: "tip",
+        icon: "fa-trophy", iconBg: "rgba(245,158,11,.12)", iconColor: "var(--accent-orange)",
+        category: "🏆 Best Practice — למד מהמצוינים",
+        title: `קטגוריית שיא: "${topCat.name}" — ${topCat.avg_open}% פתיחה`,
+        body: `קטגוריה זו מובילה עם <strong>${topCat.avg_open}%</strong> פתיחה ו-<strong>${topCat.avg_click}%</strong> הקלקות. שעת השיא: <strong>${topCat.best_hour}:00</strong>, יום השיא: <strong>${topCat.best_day}</strong>. הפץ את השיטות שלה לקטגוריות אחרות.`,
+        metrics: [
+            { label: "% פתיחה", val: `${topCat.avg_open}%`, cls: "up" },
+            { label: "% הקלקות", val: `${topCat.avg_click}%`, cls: "up" }
+        ],
+        actions: [
+            `בחן את ניסוחי הכותרות בקטגוריית "${topCat.name}" וחקה את הסגנון`,
+            `שלח קטגוריות אחרות בשעה ${topCat.best_hour}:00 ביום ${topCat.best_day} כנקודת פתיחה`,
+            "ראיין את מחברי התוכן בקטגוריה זו ובנה מדריך Best Practice"
+        ]
+    });
+
+    /* ── 8. RECIPIENT GROUP OPTIMIZATION ── */
+    const grpList = Object.entries(grps).map(([k,v])=>({name:k,...v}));
+    const bestGrp  = grpList.sort((a,b)=>(b.avg_open_with-b.avg_open_without)-(a.avg_open_with-a.avg_open_without))[0];
+    const diff = Math.round((bestGrp.avg_open_with-bestGrp.avg_open_without)*100)/100;
+    if (diff > 2) {
+        allRecs.push({
+            priority: "tip",
+            icon: "fa-users-gear", iconBg: "rgba(16,185,129,.1)", iconColor: "var(--accent-green)",
+            category: "👥 אופטימיזציית קבוצות נמענים",
+            title: `קבוצה מניבה: "${bestGrp.name}" — +${diff}% פתיחות`,
+            body: `הכללת הקבוצה <strong>"${bestGrp.name}"</strong> ברשימת הנמענים מגדילה את אחוז הפתיחה ב-<strong>+${diff}%</strong> (מ-${bestGrp.avg_open_without}% ל-${bestGrp.avg_open_with}%). הקבוצה מכילה ${bestGrp.count} דיוורים בניסיון.`,
+            metrics: [
+                { label: "פתיחה עם הקבוצה", val: `${bestGrp.avg_open_with}%`, cls: "up" },
+                { label: "פתיחה ללא הקבוצה", val: `${bestGrp.avg_open_without}%`, cls: "warn" }
+            ],
+            actions: [
+                `הרחב את שימוש קבוצת "${bestGrp.name}" לדיוורים בעלי חשיבות גבוהה`,
+                "בחן אם ניתן לפצל את הקבוצה לתת-קבוצות ולהתאים תוכן",
+                "השתמש בקבוצה זו כבסיס לדיוורי Pilot"
+            ]
+        });
+    }
+
+    /* ── 9. MONTHLY TREND ── */
+    if (mo.length >= 3) {
+        const last3 = mo.slice(-3);
+        const trend = last3[2].avg_open - last3[0].avg_open;
+        if (Math.abs(trend) > 2) {
+            allRecs.push({
+                priority: trend < 0 ? "high" : "tip",
+                icon: trend < 0 ? "fa-chart-line-down" : "fa-chart-line",
+                iconBg: trend < 0 ? "rgba(239,68,68,.08)" : "rgba(16,185,129,.1)",
+                iconColor: trend < 0 ? "var(--accent-red)" : "var(--accent-green)",
+                category: "📊 ניתוח מגמות חודשי",
+                title: trend < 0
+                    ? `ירידה מגמתית: ${Math.abs(Math.round(trend*100)/100)}% בשלושת החודשים האחרונים`
+                    : `עלייה מגמתית: +${Math.round(trend*100)/100}% בשלושת החודשים האחרונים`,
+                body: trend < 0
+                    ? `אחוזי הפתיחה ירדו מ-<strong>${last3[0].avg_open}%</strong> (${last3[0].month_name}) ל-<strong>${last3[2].avg_open}%</strong> (${last3[2].month_name}). מגמה שלילית זו דורשת בחינה מחדש של אסטרטגיית השיווק.`
+                    : `אחוזי הפתיחה עלו מ-<strong>${last3[0].avg_open}%</strong> (${last3[0].month_name}) ל-<strong>${last3[2].avg_open}%</strong> (${last3[2].month_name}). המשך בנתיב זה!`,
+                metrics: [
+                    { label: last3[0].month_name, val: `${last3[0].avg_open}%`, cls: trend<0?"down":"warn" },
+                    { label: last3[2].month_name, val: `${last3[2].avg_open}%`, cls: trend<0?"warn":"up" }
+                ],
+                actions: trend < 0
+                    ? ["בצע ניתוח תוכן — האם איכות הדיוורים ירדה?", "בדוק אם גדלה תדירות הדיוורים (Fatigue)", "ערוך סקר נמענים לזיהוי גורם הירידה"]
+                    : ["תעד את השינויים שבוצעו בחודשים האחרונים", "הפץ Best Practices מהחודש הטוב ביותר", "שמור על עקביות ואל תשנה מה שעובד"]
+            });
+        }
+    }
+
+    /* ── 10. FREQUENCY FATIGUE ── */
+    const mailsByMonth = mo.map(m=>m.mailings_count);
+    const avgMonthly = Math.round(mailsByMonth.reduce((a,b)=>a+b,0)/mailsByMonth.length);
+    const maxMonthly = Math.max(...mailsByMonth);
+    if (maxMonthly > avgMonthly * 1.5) {
+        const peakMonth = mo.find(m=>m.mailings_count===maxMonthly);
+        allRecs.push({
+            priority: "medium",
+            icon: "fa-inbox", iconBg: "rgba(99,102,241,.12)", iconColor: "var(--primary)",
+            category: "📮 עומס דיוורים — Mailing Fatigue",
+            title: `עומס שיא ב${peakMonth?.month_name} — ${maxMonthly} דיוורים בחודש`,
+            body: `הממוצע החודשי הוא <strong>${avgMonthly} דיוורים</strong>, אך ב${peakMonth?.month_name} נשלחו <strong>${maxMonthly}</strong> — פי ${Math.round(maxMonthly/avgMonthly*10)/10} מהממוצע. עומס יתר גורם ל-Subscriber Fatigue ופוגע באחוזי פתיחה.`,
+            metrics: [
+                { label: "ממוצע חודשי", val: avgMonthly, cls: "warn" },
+                { label: `שיא (${peakMonth?.month_name})`, val: maxMonthly, cls: "down" }
+            ],
+            actions: [
+                "הגדר Sending Calendar חודשי ומגבל את מספר הדיוורים",
+                "בצע עדיפות: דיוורים קריטיים בלבד בחודשים עמוסים",
+                "שקול פילוח — לא כל נמען צריך לקבל כל דיוור"
+            ]
+        });
+    }
+
+    renderRecGrid(allRecs);
+}
+
+/* ── Render the rec cards ── */
+function renderRecGrid(recs) {
+    const grid = document.getElementById("recommendations-grid");
+    if (recs.length === 0) {
+        grid.innerHTML = `<div style="color:var(--text-muted);text-align:center;padding:40px;grid-column:1/-1">אין המלצות להצגה.</div>`;
+        return;
+    }
+    const priorityOrder = { critical:0, high:1, medium:2, tip:3 };
+    const sorted = [...recs].sort((a,b)=>(priorityOrder[a.priority]??9)-(priorityOrder[b.priority]??9));
+    const badgeLabels = { critical:"🚨 קריטי", high:"🔺 גבוהה", medium:"⚡ בינונית", tip:"💡 טיפ" };
+    grid.innerHTML = sorted.map(r => `
+        <div class="rec-card" data-priority="${r.priority}">
+            <div class="rec-card-header">
+                <div class="rec-card-icon" style="background:${r.iconBg};color:${r.iconColor}">
+                    <i class="fa-solid ${r.icon}"></i>
+                </div>
+                <div class="rec-card-meta">
+                    <div class="rec-card-category">${r.category}</div>
+                    <div class="rec-card-title">${r.title}</div>
+                </div>
+                <span class="priority-badge ${r.priority}">${badgeLabels[r.priority]}</span>
+            </div>
+            <div class="rec-card-body">${r.body}</div>
+            ${r.metrics.map(m=>`
+                <div class="rec-metric">
+                    <span class="rec-metric-label">${m.label}</span>
+                    <span class="rec-metric-val ${m.cls}">${m.val}</span>
+                </div>`).join("")}
+            <div class="rec-card-actions">
+                ${r.actions.map(a=>`<div class="rec-action-item"><i class="fa-solid fa-circle-check"></i><span>${a}</span></div>`).join("")}
+            </div>
+        </div>`).join("");
+}
+
+/* ── Tab filter ── */
+function filterRecs(btn, filter) {
+    document.querySelectorAll(".rec-tab").forEach(t=>t.classList.remove("active"));
+    btn.classList.add("active");
+    document.querySelectorAll(".rec-card").forEach(card=>{
+        card.classList.toggle("hidden", filter !== "all" && card.dataset.priority !== filter);
+    });
+}
+

@@ -278,6 +278,28 @@
         <div class="groups-influence-grid" id="groups-influence-container"></div>
     </section>
 
+    <!-- ═══ Recommendations Engine ═══ -->
+    <section class="glass-card recommendations-section">
+        <div class="section-title">
+            <h2><i class="fa-solid fa-lightbulb"></i> מנוע המלצות — שיפור ביצועי שיווק</h2>
+            <p>המלצות מבוססות נתונים, מחושבות אוטומטית מתוך 108 הדיוורים. ממוינות לפי עדיפות.</p>
+        </div>
+
+        <!-- Priority filter tabs -->
+        <div class="rec-tabs">
+            <button class="rec-tab active" data-filter="all" onclick="filterRecs(this,'all')"><i class="fa-solid fa-border-all"></i> הכל</button>
+            <button class="rec-tab" data-filter="critical" onclick="filterRecs(this,'critical')"><i class="fa-solid fa-circle-exclamation"></i> קריטי</button>
+            <button class="rec-tab" data-filter="high" onclick="filterRecs(this,'high')"><i class="fa-solid fa-arrow-trend-up"></i> גבוהה</button>
+            <button class="rec-tab" data-filter="medium" onclick="filterRecs(this,'medium')"><i class="fa-solid fa-minus"></i> בינונית</button>
+            <button class="rec-tab" data-filter="tip" onclick="filterRecs(this,'tip')"><i class="fa-solid fa-star"></i> טיפים</button>
+        </div>
+
+        <div class="rec-grid" id="recommendations-grid">
+            <!-- Populated by app.js -->
+            <div style="color:var(--text-muted);font-size:14px;text-align:center;padding:40px">טוען המלצות...</div>
+        </div>
+    </section>
+
     <!-- History Table -->
     <section class="glass-card history-section">
         <div class="section-title-row">
